@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Gradients</title>
+	<style type="text/css">
+	#all{
+		display: inline;
+		
+		
+	}
+	.Box{
+		position: relative;
+		top: 40%;
+	}
+	
+	#grad1{
+		position: relative;
+		left:25%;
+		height: 150px;
+		width: 150px;
+		border-radius: 15px;
+		text-align: center;
+		background: -webkit-linear-gradient(right, red , green);
+		background: linear-gradient(to right, red , green);
+	}
+	#grad2{
+		position: relative;
+		left: 40%;
+		margin-top: -150px;
+		height: 150px;
+		width: 150px;
+		border-radius: 15px;
+		text-align: center;
+		background: -webkit-radial-gradient(50% 0%, farthest-side, red, yellow, black); /* Chrome & Safari */
+		background: radial-gradient(farthest-side at 50% 0%, red, yellow, green); /* Standard syntax*/ 
+	}
+	#grad3{
+		position: relative;
+		left: 55%;
+		margin-top: -150px;
+		height: 150px;
+		width: 150px;
+		border-radius: 15px;
+		text-align: center;
+		background: -webkit-radial-gradient(50% 0%, farthest-side, red, yellow, green); /* Chrome & Safari */
+		background: radial-gradient(farthest-corner at 50% 0%, red, yellow, green); /* Standard syntax */
+	}
+		
+	</style>
+	</head>
+	<body>
+
+	<div id="all">
+		<div id= "grad1"> <span class="Box"> Box </span> </div>
+		<div id= "grad2"> <span class="Box"> Box </span> </div>
+		<div id= "grad3"> <span class="Box"> Box </span> </div>
+		
+	</div>
+
+</body>
+</html>
